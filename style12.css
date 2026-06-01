@@ -94,12 +94,14 @@ section h1{
 
 img {
     border-radius: 50%;
-    display: block;
+    display: inline-block;
     object-fit: cover;
     border: 2px solid var(--color4);
     height: 100px;
     width: 100px;
-    margin: 0 auto 20px auto;
+    margin-left: -30px;
+    margin-top: -20px;
+    vertical-align: middle;
 }
 
 #sobre-mim a {
