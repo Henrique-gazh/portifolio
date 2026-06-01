@@ -15,6 +15,7 @@
     --white: #ffffff;
     --black: #000000;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,15 +31,16 @@ html {
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh; 
     max-width: 1000px;
     width: 100%;
+    margin: 0 auto; 
     background-color: var(--white);
 }
 
 header {
     background-color: var(--color1);
-    padding: 10px;
+    padding: 20px 10px;
     text-align: center;
 }
 
@@ -46,15 +48,17 @@ header h1 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.466);
     color: var(--white);
     font-family: var(--font2);
-    font-size: 7em;
+    font-size: clamp(2.5em, 8vw, 6em); 
     font-variant: small-caps;
     font-weight: bolder;
+    line-height: 1.1;
 }
 
 header p {
     font-size: 1em;
     font-family: var(--font1);
     color: var(--white);
+    margin-top: 10px;
 }
 
 nav {
@@ -66,51 +70,49 @@ nav {
 nav a {
     color: var(--white);
     font-family: var(--font1);
-    padding: 5px;
+    padding: 5px 10px;
     text-decoration: none;
-
+    display: inline-block; 
 }
 
 main {
-    padding: 50px;
+    padding: 20px; 
     border-radius: 10px;
-    margin: 50px auto;
-    width: 500px;
+    margin: 30px auto;
+    width: 90%; 
+    max-width: 600px; 
     background-color: #ffffff;
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-section h1{
+section h1 {
     font-family: var(--font2);
-    margin-top: -30px;
-    margin-left: -50px;
-    margin-bottom: 50px;
-    padding: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
     color: rgb(255, 255, 255);
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 500;
+    border-radius: 5px;
 }
 
 img {
     border-radius: 50%;
-    display: inline-block;
+    display: block; 
+    margin: 0 auto 20px auto;
     object-fit: cover;
     border: 2px solid var(--color4);
-    height: 100px;
-    width: 100px;
-    margin-left: -30px;
-    margin-top: -20px;
-    vertical-align: middle;
+    height: 120px;
+    width: 120px;
 }
 
 #sobre-mim a {
     background-color: var(--color5);
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 5px;
-    margin-left: 20px;
-    vertical-align: middle;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 #sobre-mim p {
@@ -118,22 +120,23 @@ img {
     margin-top: 10px;
     margin-bottom: 10px;
     color: var(--black);
+    line-height: 1.5;
 }
 
 #habilidades {
     color: var(--white);
     font-family: var(--font2);
-    margin-left: -50px;
-    margin-top: 5px;
     padding: 10px;
     font-size: 1em;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 #projetos {
-    max-width: 400px;
-    min-width: 200px;
-    min-height: 100px;
+    width: 100%;
+    max-width: 100%; 
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.247);
+    margin-top: 20px;
 }
 
 #projetos h3 {
@@ -141,27 +144,17 @@ img {
     color: white;
     font-size: 1em;
     font-family: var(--font1);
-    margin-top: 10px;
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
 }
-#projetos ul{
+
+#projetos ul {
     background-color: var(--color3);
     list-style-type: none;
     color: rgb(0, 0, 0);
     padding: 20px;
     border-radius: 0px 0px 10px 10px;
-    line-height: 25px;
-}
-
-
-#sobre-mim a:active {
-    text-decoration: underline;
-    background-color: rgb(53, 7, 179);
-}
-
-#sobre-mim a:visited{
-    background-color: rgb(64, 24, 173);
+    line-height: 30px;
 }
 
 
@@ -169,38 +162,29 @@ a:hover {
     background-color: rgb(22, 3, 73);
     border-radius: 5px;
 }
+
 a:active {
     text-decoration: underline;
     background-color: rgb(53, 7, 179);
 }
 
-a:visited{
-    background-color: rgb(73, 6, 255);
+a:visited {
+    color: #e0e0e0; /* Ajustado para não quebrar o visual */
 }
 
-#projetos > ul > li:nth-child(1)::before {
-    content: '🎨';
-}
-
-#projetos > ul > li:nth-child(2)::before {
-    content: '🐍';
-}
-
-#projetos > ul > li:nth-child(3)::before {
-    content: '⚙️';
-}
-
-#projetos > ul > li:nth-child(4)::before {
-    content: '🧠';
-}
-
+/* Emojis dos projetos */
+#projetos > ul > li:nth-child(1)::before { content: '🎨 '; }
+#projetos > ul > li:nth-child(2)::before { content: '🐍 '; }
+#projetos > ul > li:nth-child(3)::before { content: '⚙️ '; }
+#projetos > ul > li:nth-child(4)::before { content: '🧠 '; }
 
 footer {
     background-color: var(--color1);
     text-align: center;
-    padding: 5px;
+    padding: 15px;
     color: var(--black);
     font-family: var(--font2);
     font-size: 1em;
     font-variant: small-caps;
+    margin-top: 30px;
 }
