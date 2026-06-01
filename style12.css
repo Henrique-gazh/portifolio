@@ -131,8 +131,8 @@ img {
 }
 
 #projetos {
+    max-width: 100%;
     max-width: 400px;
-    min-width: 200px;
     min-height: 100px;
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.247);
 }
