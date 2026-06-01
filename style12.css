@@ -75,8 +75,7 @@ main {
     padding: 50px;
     border-radius: 10px;
     margin: 50px auto;
-    width: 90%;
-    max-width: 600px;
+    width: 500px;
     background-color: #ffffff;
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -131,8 +130,8 @@ img {
 }
 
 #projetos {
-    max-width: 100%;
     max-width: 400px;
+    min-width: 200px;
     min-height: 100px;
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.247);
 }
