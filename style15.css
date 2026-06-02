@@ -6,41 +6,42 @@
     box-sizing: border-box;
 }
 
-
 body {
-    height: 100vh;
     background-color: white;
-    width:100%;
-    position: relative;
+    width: 100%;
 }
 
+#certificado1,
+#certificado2 {
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
 #certificado1 {
-    position: relative;
-    height: 500px;
-    background: white url('https://static.vecteezy.com/ti/vetor-gratis/p1/16071138-fundo-de-espaco-de-copia-de-tecnologia-de-robo-vetor.jpg') no-repeat center center;
-    background-size: cover;
-}
-img {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    height: 400px;
+    background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/16071138-fundo-de-espaco-de-copia-de-tecnologia-de-robo-vetor.jpg');
 }
 
 #certificado2 {
-    position: relative;
-    height: 500px;
-    background: white url('https://opensource.com/sites/default/files/lead-images/header.png') no-repeat center center;
-    background-size: cover;
+    background-image: url('https://opensource.com/sites/default/files/lead-images/header.png');
+}
+
+img {
+    display: block;
+    margin: 50px auto;
+    max-width: 90%;
+    height: auto;
 }
 
 footer {
     background-color: rgb(139, 139, 223);
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 }
+
 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: black;
+    font-weight: bold;
 }
