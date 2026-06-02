@@ -6,39 +6,45 @@
     box-sizing: border-box;
 }
 
+
 body {
+    height: 100vh;
     background-color: white;
-    width: 100%;
+    width:100%;
+    position: relative;
 }
 
-#certificado1,
-#certificado2 {
-    height: 500px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
 
 #certificado1 {
-    background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/16071138-fundo-de-espaco-de-copia-de-tecnologia-de-robo-vetor.jpg');
+    position: relative;
+    height: 500px;
+    background: white url('https://static.vecteezy.com/ti/vetor-gratis/p1/16071138-fundo-de-espaco-de-copia-de-tecnologia-de-robo-vetor.jpg') no-repeat center center;
+    background-size: cover;
+}
+img {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 300px;
 }
 
 #certificado2 {
-    background-image: url('https://www.google.com/search?q=pygames&client=ms-android-motorola-rvo3&hs=kXf&sa=X&sca_esv=a4f5fd6faf7ec072&sxsrf=ANbL-n7TFKyBIjiTyFj1PTm9YRjOQe7_SQ:1780396996763&udm=2&fbs=ADc_l-acAb_3MMOAUx0zmbUpgBqRiigBgL2I_pgQa-94zvB054Dys3s2x_Qm_GJcU2DlSXgs4i471_5vbbrE24Q_ZqrCyhilsPNhxfAu1wD3b9jpYfNAyTiqGpQ9M2EThp4zdpyEQ5WXtHjGZkZNgUHHPpzl72_CFdRJ4SUSy84xTPF_ZAJ0jtrq6CWGGyJdx2fiQAms3ZAUe3eaLnGB2WxdVDuT4drXEsMJ_wsYppw7kfbQ94_D5ac&ved=0ahUKEwirmrTUr-iUAxWypJUCHZuXGXkQtKgLCCA&biw=411&bih=807&dpr=1.75#sv=CAMSVxoyKhBlLW85ay01aS11S3Z5WmJNMg5vOWstNWktdUt2eVpiTToOS1RPZHhlXzlrcHJJa00gBCoXCgFzEhBlLW85ay01aS11S3Z5WmJNGAEwAUoECAEQAhgHIOPutcAESggQAhgBIAIoAQ');
-}
-
-img {
-    display: block;
-    margin: 50px auto;
-    max-width: 90%;
-    height: auto;
+    position: relative;
+    height: 500px;
+    background: white url('https://opensource.com/sites/default/files/lead-images/header.png') no-repeat center center;
+    background-size: cover;
 }
 
 footer {
     background-color: rgb(139, 139, 223);
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
 
 a {
     text-decoration: none;
