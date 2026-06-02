@@ -158,20 +158,6 @@ img {
 }
 
 
-#sobre-mim a:active {
-    text-decoration: underline;
-    background-color: rgb(53, 7, 179);
-}
-
-#sobre-mim a:visited {
-    color: #e0e0e0; 
-}
-
-#sobre-mim a:hover {
-    background-color: rgb(22, 3, 73);
-    border-radius: 5px;
-}
-
 
 a:active {
     text-decoration: underline;
@@ -186,6 +172,21 @@ a:hover {
     background-color: rgb(22, 3, 73);
     border-radius: 5px;
 }
+
+#sobre-mim a:active {
+    text-decoration: underline;
+    background-color: rgb(53, 7, 179);
+}
+
+#sobre-mim a:visited {
+    color: #e0e0e0; 
+}
+
+#sobre-mim a:hover {
+    background-color: rgb(22, 3, 73);
+    border-radius: 5px;
+}
+
 
 
 #projetos > ul > li:nth-child(1)::before { content: '🎨 '; }
