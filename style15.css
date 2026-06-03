@@ -8,37 +8,49 @@
 
 
 body {
-    height: 100vh;
-    background-color: white;
+    margin: 0 auto;
+    background-color: rgb(94, 236, 255)
+    max-width: 1000px;
     width: 100%;
-    position: relative;
 }
 
 
 #certificado1 {
-    position: relative;
-    height: 500px;
+    margin: auto;
+    min-height: 500px;
     background: white url('https://static.vecteezy.com/ti/vetor-gratis/p1/16071138-fundo-de-espaco-de-copia-de-tecnologia-de-robo-vetor.jpg') no-repeat center center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 img {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    height: 300px;
+    border-radius: 5px;
+    border: 2px solid rgb(15, 3, 129);
+    margin: 50px auto;
+    max-width: 90%;
+    height: auto;
+    max-height: 300px;
+    display: block;
 }
 
 #certificado2 {
-    position: relative;
-    height: 500px;
+    margin: auto;
+    min-height: 600px;
     background: white url('https://opensource.com/sites/default/files/lead-images/header.png') no-repeat center center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
     background-color: rgb(139, 139, 223);
-    padding: 5px;
+    padding: 15px;
     text-align: center;
+
 }
 
 a {
@@ -46,3 +58,26 @@ a {
     color: black;
     font-weight: bold;
 }
+
+
+#certificado1 a, 
+#certificado2 a {
+    display: none;
+    text-align: center;
+    margin: 50px auto;
+}
+
+#certificado1:hover a, #certificado2:hover a{
+    display: block;
+    border: 2px solid rgb(5, 1, 1);
+    border-radius: 10px;
+    background-color: rgb(255, 252, 252);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: 10px auto;
+    max-width: 325px;
+    padding: 10px;
+}
+
+
